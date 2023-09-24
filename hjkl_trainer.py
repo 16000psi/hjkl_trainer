@@ -11,9 +11,6 @@ highscores = []
 most_recent_nickname = "VIM"
 
 
-
-
-
 class Player:
     player_y = 4
     player_x = 5
@@ -44,18 +41,16 @@ def clear_console():
 
 def process_input(keyboard_event):
 
-    # print(keyboard_event.scan_code)
 
     if keyboard_event.event_type == keyboard.KEY_UP:
         return
 
-    if keyboard_event.scan_code == 4: # 4
+    if keyboard_event.scan_code == 4: # h
         if Player.player_x > 0:
             Player.player_x -= 1 
-    elif keyboard_event.scan_code == 38: # J
+    elif keyboard_event.scan_code == 38: # j
         if Player.player_y < 9:
             Player.player_y += 1
-     
     elif keyboard_event.scan_code == 40: # k
         if Player.player_y > 0:
             Player.player_y -= 1   

@@ -1,0 +1,7 @@
+This game helps train you to use h,j,k and l to navigate text files, which may be helpful if you want to learn vim or vim motions.
+
+The game requires you to dodge "projectiles" (the character "O" stuttering towards you menacingly) and pick up "gems" ("$"). The player is represented by the character "x", and the game is played on a 10 by 10 grid.  It gets progressively harder as the speed and number of projectiles increases along with the player's score.  After a game, highscores are saved, so you can try to beat your personal best, or in the unlikely situation that you know someone else who is less than a week into learning vim, to beat them. 
+
+To install and run the game, clone this repository and create a virtual environment with the python library "keyboard" installed. Activate the virtual environment and run hjkl_trainer.py. On my machine, I have to run the hjkl_trainer.py script as sudo for permissions reasons relating to the keyboard library, so you may have to do that as well. 
+
+NB - the h, j, k and l key scan codes are hardcoded into the game as on my machine I was not able to access the keys directly, which means the game may be controlled with different keys on different machines. If this happens on your machine, to rectify it you can change the keyboard_event.scan_codes in the function "process_input", at the lines that are commented with the relevant key.
